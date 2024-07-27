@@ -71,6 +71,7 @@ header {
   height: 49px;
   display: none;
 }
+
 /* header///////////////////////////////////// */
 main {
   padding: 100px 0px 0px 0px;
@@ -89,23 +90,84 @@ main {
   border-radius: 20px;
   padding: 20px 0px 0px 0px;
 }
-.avatar {
-  border: 5px solid black;
+.userDiv h3 {
+  color: #aef166;
+}
+/* ///////////////////////////// */
+.owner {
+  height: 420px;
+  background-color: rgb(100, 99, 99);
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px 0px 0px 0px;
+}
+.owner h3 {
+  color: #ff0000;
+}
+.admin {
+  height: 420px;
+  width: 300px;
+  background-color: rgb(100, 99, 99);
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px 0px 0px 0px;
+}
+.admin h3 {
+  color: #00a8f0;
+}
+.admin .avatar {
+  border: 2px solid #00000049;
   border-radius: 30px;
-  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.753);
+  box-shadow: 0px 0px 23px #00a8f0;
+}
+.admin .name_h1 {
+  color: #00a8f0;
+}
+.BOT {
+  height: 420px;
+  width: 300px;
+  background-color: rgb(100, 99, 99);
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px 0px 0px 0px;
+}
+.BOT h3 {
+  color: #7c4c9c;
+}
+.BOT .avatar {
+  border: 2px solid #00000049;
+  border-radius: 30px;
+  box-shadow: 0px 0px 26px #a216ff;
+}
+/* ///////////////////////////// */
+
+.roles {
+  margin: 30px 0px 0px 0px;
+}
+.avatar {
+  border: 2px solid #00000049;
+  border-radius: 30px;
+  box-shadow: 0px 0px 23px #aef166;
 }
 .name_h1 {
-  color: rgb(8, 8, 8);
+  color: #aef166;
   font-weight: 900;
 }
 .status_h2 {
-  margin: 20px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
 }
 .status_h2_online {
-  color: rgb(18, 180, 255);
+  color: rgb(65, 255, 18);
 }
 .status_h2_idle {
-  color: rgb(238, 255, 0);
+  color: rgb(255, 238, 0);
+}
+.status_more {
+  color: red;
 }
 .server_name_h3 {
   font-size: 1.6rem;
@@ -117,6 +179,9 @@ main {
   text-decoration: none;
   color: rgb(179, 255, 0);
 }
+.span_role {
+  color: rgb(0, 0, 0);
+}
 /* -------------------------------- */
 body {
   background-color: rgb(196, 196, 196);
@@ -125,9 +190,7 @@ body {
   .nav_1 {
     display: none;
   }
-  /* .nav_2 {
-    display: block;
-  } */
+
   .burgerBar {
     display: block;
   }
