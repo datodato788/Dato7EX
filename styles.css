@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-
 }
 
 main {
@@ -13,7 +12,7 @@ main {
   justify-content: center;
 }
 .userDiv {
-  height: 500px;
+  height: 420px;
   background-color: rgb(85, 85, 85);
   width: 300px;
   margin: 20px;
@@ -24,15 +23,32 @@ main {
 .avatar {
   border: 5px solid black;
   border-radius: 30px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.753);
 }
 .name_h1 {
+  color: rgb(8, 8, 8);
+  font-weight: 900;
 }
-.status_h2{
-    margin: 30px  0px  0px 0px ;
+.status_h2 {
+  margin: 20px 0px 0px 0px;
 }
 .status_h2_online {
-  color: rgb(57, 57, 236);
+  color: rgb(18, 180, 255);
 }
 .status_h2_idle {
-  color: rgb(191, 202, 40);
+  color: rgb(238, 255, 0);
+}
+.server_name_h3 {
+  font-size: 1.6rem;
+  color: rgb(179, 255, 0);
+  margin: 0px 0px 50px 0px;
+  cursor: pointer;
+}
+.server_name_h3 a {
+  text-decoration: none;
+  color: rgb(179, 255, 0);
+}
+/* -------------------------------- */
+body {
+  background-color: rgb(196, 196, 196);
 }

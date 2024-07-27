@@ -12,11 +12,11 @@ fetch("https://discord.com/api/guilds/1263226066768756787/widget.json")
       } else if (statusW == "idle") {
         return "status_h2_idle";
       } else {
-        return "more";
+        return "status_more";
       }
     };
 
-    for (let i = 0; i <= user.members.length; i++) {
+    for (let i = 0; i < user.members.length; i++) {
       //////////////////////////////////////////////
       const user_div = document.createElement("div");
       user_div.classList.add("userDiv");
@@ -28,13 +28,19 @@ fetch("https://discord.com/api/guilds/1263226066768756787/widget.json")
       const status = document.createElement("h2");
       status.classList.add("status_h2");
       status.classList.toggle(statusColor(user.members[i].status));
+      const server_name_h3 = document.createElement("h3");
+      server_name_h3.classList.add("server_name_h3");
+      const server_name_h3_a = document.createElement("a");
+      server_name_h3_a.setAttribute("href", user.instant_invite);
       //////////////////////////////////////////////
       const usrNum = user.members[i];
       user_div_avatar_img.setAttribute("src", usrNum.avatar_url);
       name.innerHTML = user.members[i].username;
-
       status.innerHTML = user.members[i].status;
+      server_name_h3_a.innerHTML = user.name;
       //////////////////////////////////////////////
+      user_div.appendChild(server_name_h3);
+      server_name_h3.appendChild(server_name_h3_a);
       main_div.appendChild(user_div);
       user_div.appendChild(user_div_avatar);
       user_div_avatar.appendChild(user_div_avatar_img);
