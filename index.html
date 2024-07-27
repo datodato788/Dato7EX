@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roblox Geo Community</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="button.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,23 +17,136 @@
     <header>
       <div class="header">
         <div class="logo">
-        <a href=""><img src="img/discord_logo.png" alt="discrod icon" />
+          <a href=""><img src="img/discord_logo.png" alt="discrod icon" /></a>
           <h4><a href="">Dato_7</a></h4>
         </div>
 
-        <nav class="nav_1"><ul>
-        <li><a href="">ComingSoon!</a></li>
-        <li><a href="">ComingSoon!</a></li>  
-        <li><a href="">ComingSoon!</a></li></ul></nav>
-        <img onclick="toggleBurgerBar()" id="burgerBar" class="burgerBar" src="img/burger-bar (1).png" alt="butgerBar">
+        <nav class="nav_1">
+          <ul>
+            <li><a href="">ComingSoon!</a></li>
+            <li><a href="">ComingSoon!</a></li>
+            <li><a href="">ComingSoon!</a></li>
+          </ul>
+        </nav>
+        <img
+          onclick="toggleBurgerBar()"
+          id="burgerBar"
+          class="burgerBar"
+          src="img/burger-bar (1).png"
+          alt="butgerBar"
+        />
       </div>
       <nav id="nav_2_id" class="nav_2">
-        <div class="nav_2_div"><ul>
-        <li><a href="">ComingSoon!</a></li>
-        <li><a href="">ComingSoon!</a></li>  
-        <li><a href="">ComingSoon!</a></li></ul></div></nav>
+        <div class="nav_2_div">
+          <ul>
+            <li><a href="">ComingSoon!</a></li>
+            <li><a href="">ComingSoon!</a></li>
+            <li><a href="">ComingSoon!</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <main id="main"><div id="main_div"></div></main>
+
+    <main id="main">
+      <div class="setting_div_1">
+        <div class="setting_div_2">
+          <img
+            onclick="showSetting()"
+            id="setting"
+            src="img/setting.png"
+            alt="srtting icon"
+          />
+        </div>
+
+        <div class="setting_div_3">
+          <div class="setting_div_4" id="setting_div_4">
+            <div class="button1">
+              <label class="switch">
+                <input
+                  id="button1_bt"
+                  type="checkbox"
+                  checked
+                  onclick="button1On()"
+                />
+                <span class="slider"></span>
+              </label>
+              <h3>Bots</h3>
+            </div>
+            <br />
+
+            <div class="button1">
+              <label class="switch">
+                <input
+                  id="button1_bt"
+                  type="checkbox"
+                  
+                  onclick="button1On()"
+                />
+                <span class="slider"></span>
+              </label>
+              <h3>ComingSoon!</h3>
+            </div>
+            <br />
+
+            <div class="button1">
+              <label class="switch">
+                <input
+                  id="button1_bt"
+                  type="checkbox"
+                  
+                  onclick="button1On()"
+                />
+                <span class="slider"></span>
+              </label>
+              <h3>ComingSoon!</h3>
+            </div>
+            <br />
+
+            <div class="button1">
+              <label class="switch">
+                <input
+                  id="button1_bt"
+                  type="checkbox"
+                  
+                  onclick="button1On()"
+                />
+                <span class="slider"></span>
+              </label>
+              <h3>ComingSoon!</h3>
+            </div>
+            <br />
+
+            <div class="button1">
+              <label class="switch">
+                <input
+                  id="button1_bt"
+                  type="checkbox"
+                  
+                  onclick="button1On()"
+                />
+                <span class="slider"></span>
+              </label>
+              <h3>ComingSoon!</h3>
+            </div>
+            <br />
+
+            <div class="button1">
+              <label class="switch">
+                <input
+                  id="button1_bt"
+                  type="checkbox"
+                  
+                  onclick="button1On()"
+                />
+                <span class="slider"></span>
+              </label>
+              <h3>ComingSoon!</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main_div"></div>
+    </main>
     <script src="scripts.js"></script>
   </body>
 </html>
