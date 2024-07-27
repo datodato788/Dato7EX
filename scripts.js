@@ -48,3 +48,7 @@ fetch("https://discord.com/api/guilds/1263226066768756787/widget.json")
     }
     ///////////////////////////////////////////////
   });
+function toggleBurgerBar() {
+  nav_2_id.classList.add("nav_2_show");
+  nav_2_id.classList.toggle("nav_2_none");
+}

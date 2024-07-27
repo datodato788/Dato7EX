@@ -9,7 +9,7 @@ a {
 /* All */
 header {
   background-color: rgb(85, 85, 85);
-  height: 73px;
+  height: 74px;
   position: fixed;
   width: 100%;
 }
@@ -29,7 +29,6 @@ header {
   margin: 20px 0px 0px 0px;
   font-size: 1.5rem;
   text-shadow: 0px 0px 10px white;
-
 }
 .logo a {
   color: black;
@@ -50,9 +49,31 @@ header {
   font-size: 1.4rem;
   font-weight: 900;
 }
+.nav_2 {
+  display: none;
+  text-align: center;
+  height: 200px;
+  background-color: rgb(85, 85, 85);
+  position: fixed;
+  width: 100%;
+}
+.nav_2_div li {
+  margin: 30px 0px 0px 0px;
+}
+.nav_2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+}
+.nav_2 ul li {
+}
+.burgerBar {
+  height: 49px;
+  display: none;
+}
 /* header///////////////////////////////////// */
 main {
-  padding: 150px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
 }
 #main_div {
   display: flex;
@@ -99,4 +120,22 @@ main {
 /* -------------------------------- */
 body {
   background-color: rgb(196, 196, 196);
+}
+@media screen and (max-width: 700px) {
+  .nav_1 {
+    display: none;
+  }
+  /* .nav_2 {
+    display: block;
+  } */
+  .burgerBar {
+    display: block;
+  }
+
+  .nav_2_show {
+    display: block;
+  }
+  .nav_2_none {
+    display: none;
+  }
 }
