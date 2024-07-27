@@ -5,7 +5,6 @@ fetch("https://discord.com/api/guilds/1263226066768756787/widget.json")
     return json.json();
   })
   .then(function (user) {
-    console.log(user);
     const statusColor = (statusW) => {
       if (statusW == "online") {
         return "status_h2_online";
