@@ -259,14 +259,60 @@ main #setting {
   .setting_div_2 {
     margin: 0px 120px 0px 0px;
   }
+  /* ///////////////////////////////////// */
+  .setting_div_2 {
+    margin: 0px 70px 0px 0px;
+    padding: 0px 50px 0px 0px;
+  }
+  
+  .setting_div_3 {
+    margin: 0px 140px 0px 0px;
+    border-radius: 20px;
+  
+  }
+  .setting_div_4 {
+    padding: 0px 0px 0px 0px;
+    border-radius: 20px;
+    height: 250px;
+    width: 200px;
+    padding: 20px 0px 0px 50px;
+
+  
+  }
 }
 @media screen and (max-width: 540px) {
   .setting_div_2 {
     margin: 0px 87px 0px 0px;
   }
+  .setting_div_3 {
+    margin: 0px 160px 0px 0px;
+    border-radius: 20px;
+  
+  }
+  .setting_div_4 {
+    padding: 0px 0px 0px 0px;
+    border-radius: 20px;
+    padding: 20px 0px 0px 50px;
+
+  
+  }
 }
 @media screen and (max-width: 400px) {
   .setting_div_2 {
     margin: 0px 59px 0px 0px;
+  }
+  .setting_div_3 {
+    margin: 0px 130px 0px 0px;
+    border-radius: 20px;
+  
+  }
+  .setting_div_4 {
+    padding: 0px 0px 0px 0px;
+    border-radius: 20px;
+    height: 250px;
+    width: 180px;
+    padding: 20px 0px 0px 50px;
+
+  
   }
 }
