@@ -21,6 +21,7 @@ fetch("../MoreAllFiles/Header.html")
     const nav1_a3 = document.getElementById("nav1_a3");
     // -
     const nav2_a1 = document.getElementById("nav2_a1");
+    nav2_a1.href = "DCserver.html";
     const nav2_a2 = document.getElementById("nav2_a2");
     const nav2_a3 = document.getElementById("nav2_a3");
   });
