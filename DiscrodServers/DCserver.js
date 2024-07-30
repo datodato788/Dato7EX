@@ -5,15 +5,15 @@ fetch("/MoreAllFiles/Header.html")
     headerMain.innerHTML = hed;
     // -----------
     const LogoIcon = document.getElementById("LogoIcon");
-    LogoIcon.src = "../!img/discord_logo.png";
+    LogoIcon.src = "/!img/discord_logo.png";
     // -
     const DiscrodIcon = document.getElementById("DiscrodIcon");
     const logo_name = document.getElementById("logo_name");
-    DiscrodIcon.href = "../index.html";
-    logo_name.href = "../index.html";
+    DiscrodIcon.href = "/index.html";
+    logo_name.href = "/index.html";
     // -
     const burgerBar = document.getElementById("burgerBar");
-    burgerBar.src = "../!img/burger-bar.png";
+    burgerBar.src = "/!img/burger-bar.png";
     // -
     const nav1_a1 = document.getElementById("nav1_a1");
     nav1_a1.href = "DiscrodServers/DCserver.html";
