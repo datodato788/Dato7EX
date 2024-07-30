@@ -16,7 +16,7 @@ fetch("/MoreAllFiles/Header.html")
     burgerBar.src = "/!img/burger-bar.png";
     // -
     const nav1_a1 = document.getElementById("nav1_a1");
-    nav1_a1.href = "DiscrodServers/DCserver.html";
+    nav1_a1.href = "DCserver.html";
     const nav1_a2 = document.getElementById("nav1_a2");
     const nav1_a3 = document.getElementById("nav1_a3");
     // -
