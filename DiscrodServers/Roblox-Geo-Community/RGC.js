@@ -139,13 +139,6 @@ fetch("https://discord.com/api/guilds/1263226066768756787/widget.json")
     button1_bt.onclick = filterAndRenderUsers;
   });
 
-// Toggle burger bar
-function toggleBurgerBar() {
-  const nav_2_id = document.getElementById("nav_2_id");
-  nav_2_id.classList.add("nav_2_show");
-  nav_2_id.classList.toggle("nav_2_none");
-}
-
 // Show settings
 function showSetting() {
   const settingDiv4 = document.getElementById("setting_div_4");

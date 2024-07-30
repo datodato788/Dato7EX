@@ -1,0 +1,117 @@
+
+.owner {
+  height: 420px;
+  background-color: rgb(100, 99, 99);
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px 0px 0px 0px;
+}
+.owner h3 {
+  color: #ff0000;
+}
+.admin {
+  height: 420px;
+  width: 300px;
+  background-color: rgb(100, 99, 99);
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px 0px 0px 0px;
+}
+.admin h3 {
+  color: #00a8f0;
+}
+.admin .avatar {
+  border: 2px solid #00000049;
+  border-radius: 30px;
+  box-shadow: 0px 0px 23px #00a8f0;
+}
+.admin .name_h1 {
+  color: #00a8f0;
+}
+.BOT {
+  height: 420px;
+  width: 300px;
+  background-color: rgb(100, 99, 99);
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px 0px 0px 0px;
+}
+.BOT h3 {
+  color: #7c4c9c;
+}
+.BOT .avatar {
+  border: 2px solid #00000049;
+  border-radius: 30px;
+  box-shadow: 0px 0px 26px #a216ff;
+}
+/* ///////////////////////////// */
+
+.roles {
+  margin: 30px 0px 0px 0px;
+}
+.avatar {
+  border: 2px solid #00000049;
+  border-radius: 30px;
+  box-shadow: 0px 0px 23px #aef166;
+}
+.name_h1 {
+  color: #aef166;
+  font-weight: 900;
+}
+.status_h2 {
+  margin: 10px 0px 0px 0px;
+}
+.status_h2_online {
+  color: rgb(65, 255, 18);
+}
+.status_h2_idle {
+  color: rgb(255, 238, 0);
+}
+.status_more {
+  color: red;
+}
+.server_name_h3 {
+  font-size: 1.6rem;
+  color: rgb(179, 255, 0);
+  margin: 0px 0px 50px 0px;
+  cursor: pointer;
+}
+.server_name_h3 a {
+  text-decoration: none;
+  color: rgb(179, 255, 0);
+}
+.span_role {
+  color: rgb(0, 0, 0);
+}
+/* -------------------------------- */
+main {
+  padding: 100px 0px 0px 0px;
+}
+#main_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.userDiv {
+  height: 420px;
+  background-color: rgb(100, 99, 99);
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px 0px 0px 0px;
+}
+.userDiv h3 {
+  color: #aef166;
+}
+body {
+  background-color: rgb(196, 196, 196);
+}
+main #setting {
+  height: 40px;
+  align-items: right;
+}
