@@ -10,7 +10,7 @@ fetch("/MoreAllFiles/Header.html")
     const DiscrodIcon = document.getElementById("DiscrodIcon");
     const logo_name = document.getElementById("logo_name");
     DiscrodIcon.href = "../index.html";
-    logo_name.href = "../index.htmll";
+    logo_name.href = "../index.html";
     // -
     const burgerBar = document.getElementById("burgerBar");
     burgerBar.src = "../!img/burger-bar.png";
