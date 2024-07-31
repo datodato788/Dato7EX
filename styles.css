@@ -1,0 +1,193 @@
+main {
+  padding: 220px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+body{
+  background-color: rgb(194, 191, 3);
+  ;
+}
+.discord_card {
+  background: linear-gradient(to top, rgb(1, 11, 160), rgb(161, 2, 2));
+  height: 530px;
+  width: 370px;
+  border-radius: 20px;
+}
+.discord_card_head {
+  height: 265px;
+  width: 370px;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.discord_card_head img {
+  height: 135px;
+  margin: 70px 0px 0px 0px;
+  border-radius: 20%;
+  padding: 5px;
+}
+.img_online {
+  border: 5px solid rgb(0, 68, 255);
+}
+.img_idle {
+  border: 5px solid rgb(255, 187, 0);
+}
+.img_dnd {
+  border: 5px solid rgb(255, 0, 0);
+}
+.discord_card_main {
+  height: 265px;
+  width: 370px;
+  border-radius: 20px;
+  text-align: center;
+  color: rgb(0, 250, 54);
+}
+.discord_card_main h1 {
+  margin: 40px 0px 0px 0px;
+}
+.discord_card h2 {
+  margin: 40px 0px 0px 0px;
+  color: rgb(247, 72, 72);
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 450px) {
+  .discord_card {
+    height: 470px;
+    width: 300px;
+  }
+  .discord_card_head {
+    height: 230px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .discord_card_main {
+    height: 230px;
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(0, 250, 54);
+  }
+  .discord_card_head img {
+    height: 130px;
+  }
+  .discord_card h2 {
+    margin: 50px 0px 0px 0px;
+    color: rgb(247, 72, 72);
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .discord_card {
+    height: 400px;
+    width: 260px;
+  }
+  .discord_card_head {
+    height: 200px;
+    width: 260px;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .discord_card_head img {
+    height: 110px;
+    margin: 40px 0px 0px 0px;
+    border-radius: 20%;
+    padding: 5px;
+  }
+  .discord_card_main {
+    height: 200px;
+    width: 260px;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(0, 250, 54);
+  }
+  .discord_card_main h1 {
+    margin: 6px 0px 0px 0px;
+  }
+
+  .discord_card h2 {
+    margin: 50px 0px 0px 0px;
+    color: rgb(247, 72, 72);
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  .discord_card {
+    height: 360px;
+    width: 230px;
+  }
+  .discord_card_head {
+    height: 180px;
+    width: 230px;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .discord_card_head img {
+    height: 110px;
+    margin: 40px 0px 0px 0px;
+    border-radius: 20%;
+    padding: 5px;
+  }
+  .discord_card_main {
+    height: 180px;
+    width: 230px;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(0, 250, 54);
+  }
+  .discord_card_main h1 {
+    margin: 6px 0px 0px 0px;
+  }
+
+  .discord_card h2 {
+    margin: 50px 0px 0px 0px;
+    color: rgb(247, 72, 72);
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 250px) {
+  .discord_card {
+    height: 340px;
+    width: 200px;
+  }
+  .discord_card_head {
+    height: 180px;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .discord_card_head img {
+    height: 100px;
+    margin: 40px 0px 0px 0px;
+    border-radius: 20%;
+    padding: 5px;
+  }
+  .discord_card_main {
+    height: 180px;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(0, 250, 54);
+  }
+  .discord_card_main h1 {
+    margin: 6px 0px 0px 0px;
+  }
+
+  .discord_card h2 {
+    margin: 50px 0px 0px 0px;
+    color: rgb(247, 72, 72);
+    font-size: 1rem;
+  }
+}
+  
+
