@@ -11,6 +11,11 @@
 .owner h3 {
   color: #ff0000;
 }
+.owner .avatar{
+  border: 2px solid #00000049;
+  border-radius: 30px;
+  box-shadow: 0px 0px 23px #ff0000;
+}
 .admin {
   height: 420px;
   width: 300px;
@@ -57,6 +62,7 @@
   border: 2px solid #00000049;
   border-radius: 30px;
   box-shadow: 0px 0px 23px #aef166;
+
 }
 .name_h1 {
   color: #aef166;
