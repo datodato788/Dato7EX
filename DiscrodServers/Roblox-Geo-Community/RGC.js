@@ -142,8 +142,7 @@ fetch("https://discord.com/api/guilds/1263226066768756787/widget.json")
 // Show settings
 function showSetting() {
   const settingDiv4 = document.getElementById("setting_div_4");
-  settingDiv4.classList.add("setting_div_4_show");
-  settingDiv4.classList.toggle("setting_div_4_none");
+  settingDiv4.classList.toggle("setting_div_4_show");
 }
 fetch("https://discord.com/api/guilds/1267900170146943056/widget.json")
   .then((Q) => Q.json())
