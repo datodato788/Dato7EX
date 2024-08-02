@@ -28,13 +28,17 @@ body{
   padding: 5px;
 }
 .img_online {
-  border: 5px solid rgb(0, 68, 255);
+  border: 5px solid rgb(18, 161, 42);
 }
 .img_idle {
   border: 5px solid rgb(255, 187, 0);
 }
 .img_dnd {
   border: 5px solid rgb(255, 0, 0);
+}
+.img_offline{
+  border: 5px solid rgb(255, 255, 255);
+
 }
 .discord_card_main {
   height: 265px;

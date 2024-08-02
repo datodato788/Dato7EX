@@ -31,32 +31,58 @@ fetch("https://discord.com/api/guilds/1267900170146943056/widget.json")
   .then((user) => {
     const discord_card_head = document.getElementById("discord_card_head");
     const userImg = document.createElement("img");
-    const image = user.members[0].avatar_url;
     const name = document.getElementById("name");
     const play = document.getElementById("play");
-    const nnm = user.members[0].username;
-
     //---
-    localStorage.setItem("images", image);
-    localStorage.setItem("names", nnm);
+
     const localSave = () => {
       if (
-        user.members[0].status == "online" ||
-        user.members[0].status == "idle" ||
-        user.members[0].status == "dnd"
+        user &&
+        user.members[0] &&
+        (user.members[0].status == "online" ||
+          user.members[0].status == "idle" ||
+          user.members[0].status == "dnd")
       ) {
+        const nnm = () => {
+          if (user && user.members[0] && user.members[0].username) {
+            return user.members[0].username;
+          }
+        };
+
+        // -----------   // -----------   // -----------   // -----------
+        const image = () => {
+          if (user && user.members[0] && user.members[0].avatar_url) {
+            return user.members[0].avatar_url;
+          } else {
+            return "error";
+          }
+        };
+        // -----------   // -----------   // -----------   // -----------
         if (!localStorage.getItem("images") || !localStorage.getItem("names")) {
-          localStorage.setItem("images", image);
-          localStorage.setItem("names", nnm);
+          localStorage.setItem("images", image());
+          localStorage.setItem("names", nnm());
+
           // -
-          name.innerHTML = localStorage.getItem("names");
+          userImg.setAttribute("src", localStorage.getItem("images"));
+
           // -
           discord_card_head.appendChild(userImg);
-        }
+        } // -----------   // -----------   // -----------   // -----------
+        localStorage.setItem("images", image());
+        localStorage.setItem("names", nnm());
+        // --
         userImg.setAttribute("src", localStorage.getItem("images"));
         // -
         discord_card_head.appendChild(userImg);
         // -
+        name.innerHTML = localStorage.getItem("names");
+      } else if (
+        !!localStorage.getItem("images") &&
+        !!localStorage.getItem("names")
+      ) {
+        const ll = localStorage.getItem("images");
+        userImg.setAttribute("src", localStorage.getItem("images"));
+        discord_card_head.appendChild(userImg);
         name.innerHTML = localStorage.getItem("names");
       } else {
         userImg.setAttribute("src", "!img/pfp.png");
@@ -68,6 +94,7 @@ fetch("https://discord.com/api/guilds/1267900170146943056/widget.json")
     };
     //---
     localSave();
+
     // ---
     const p = () => {
       if (
@@ -87,25 +114,22 @@ fetch("https://discord.com/api/guilds/1267900170146943056/widget.json")
     //---
     const favIcon = document.getElementById("favIcon");
 
-    if (user.members[0].status == "online") {
+    if (user && user.members[0] && user.members[0].status == "online") {
       userImg.classList.add("img_online");
       favIcon.href = "!img/green.png";
-      titleStatus.innerHTML= "STATUS_online"
-    } else if (user.members[0].status == "idle") {
+      titleStatus.innerHTML = "STATUS_online";
+    } else if (user && user.members[0] && user.members[0].status == "idle") {
       favIcon.href = "!img/yellow.png";
       userImg.classList.add("img_idle");
-      titleStatus.innerHTML= "STATUS_idle"
-
-    } else if (user.members[0("dnd")]) {
+      titleStatus.innerHTML = "STATUS_idle";
+    } else if (user && user.members[0] && user.members[0].dnd == "dnd") {
       userImg.classList.add("img_dnd");
       favIcon.href = "!img/red.png";
-      titleStatus.innerHTML= "STATUS_dnd"
-
+      titleStatus.innerHTML = "STATUS_dnd";
     } else {
       userImg.classList.add("img_offline");
       favIcon.href = "!img/black.png";
-      titleStatus.innerHTML= "STATUS_offline"
-
+      titleStatus.innerHTML = "STATUS_offline";
     }
   });
-const titleStatus = document.getElementById("titleStatus")
+const titleStatus = document.getElementById("titleStatus");
