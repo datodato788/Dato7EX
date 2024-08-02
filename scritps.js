@@ -85,12 +85,19 @@ fetch("https://discord.com/api/guilds/1267900170146943056/widget.json")
     //---
     play.innerHTML = p();
     //---
+    const favIcon = document.getElementById("favIcon");
 
     if (user.members[0].status == "online") {
       userImg.classList.add("img_online");
+      favIcon.href = "!img/green.png";
     } else if (user.members[0].status == "idle") {
+      favIcon.href = "!img/yellow.png";
       userImg.classList.add("img_idle");
-    } else {
+    } else if (user.members[0("dnd")]) {
       userImg.classList.add("img_dnd");
+      favIcon.href = "!img/red.png";
+    } else {
+      userImg.classList.add("img_offline");
+      favIcon.href = "!img/black.png";
     }
   });
