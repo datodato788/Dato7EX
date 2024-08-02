@@ -9,7 +9,7 @@ fetch("https://discord.com/api/guilds/1263226066768756787/widget.json")
   .then(function (user) {
     // Rendering users
     const renderUsers = (members) => {
-      main_div.innerHTML = "";
+      main_div.innerHTML = ""; 
       members.forEach((member) => {
         const user_div = document.createElement("div");
         user_div.classList.toggle(checkRole(member.username));
@@ -37,9 +37,7 @@ fetch("https://discord.com/api/guilds/1263226066768756787/widget.json")
 
         const roles = document.createElement("h3");
         roles.classList.add("roles");
-        roles.innerHTML = `<h5 class="span_role">ROLE:</h5> ${getRoleName(
-          checkRole(member.username)
-        )}`;
+        roles.innerHTML = `<h5 class="span_role">ROLE:</h5> ${getRoleName(checkRole(member.username))}`;
 
         user_div.appendChild(server_name_h3);
         server_name_h3.appendChild(server_name_h3_a);
@@ -65,10 +63,7 @@ fetch("https://discord.com/api/guilds/1263226066768756787/widget.json")
 
     // Check user role
     const checkRole = (username) => {
-      if (
-        username.toUpperCase() === "MAR" ||
-        username.toUpperCase() === "VIN"
-      ) {
+      if (username.toUpperCase() === "MAR" || username.toUpperCase() === "VIN") {
         return "admin";
       } else if (username.toUpperCase() === "SOTK") {
         return "owner";
@@ -157,11 +152,17 @@ fetch("https://discord.com/api/guilds/1267900170146943056/widget.json")
 
     if (user.members[0].status == "online") {
       favIcon.href = "../../!img/green.png";
+      titleStatus.innerHTML = "STATUS_online";
     } else if (user.members[0].status == "idle") {
       favIcon.href = "../!img/yellow.png";
+      titleStatus.innerHTML = "STATUS_idle";
+
     } else if (user.members[0("dnd")]) {
       favIcon.href = "../../!img/red.png";
+      titleStatus.innerHTML = "STATUS_dnd";
     } else {
       favIcon.href = "../../!img/black.png";
+      titleStatus.innerHTML = "STATUS_offline";
     }
   });
+  const titleStatus = document.getElementById("titleStatus");
