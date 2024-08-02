@@ -9,7 +9,7 @@ fetch("https://discord.com/api/guilds/1263226066768756787/widget.json")
   .then(function (user) {
     // Rendering users
     const renderUsers = (members) => {
-      main_div.innerHTML = ""; 
+      main_div.innerHTML = "";
       members.forEach((member) => {
         const user_div = document.createElement("div");
         user_div.classList.toggle(checkRole(member.username));
@@ -37,7 +37,9 @@ fetch("https://discord.com/api/guilds/1263226066768756787/widget.json")
 
         const roles = document.createElement("h3");
         roles.classList.add("roles");
-        roles.innerHTML = `<h5 class="span_role">ROLE:</h5> ${getRoleName(checkRole(member.username))}`;
+        roles.innerHTML = `<h5 class="span_role">ROLE:</h5> ${getRoleName(
+          checkRole(member.username)
+        )}`;
 
         user_div.appendChild(server_name_h3);
         server_name_h3.appendChild(server_name_h3_a);
@@ -63,7 +65,10 @@ fetch("https://discord.com/api/guilds/1263226066768756787/widget.json")
 
     // Check user role
     const checkRole = (username) => {
-      if (username.toUpperCase() === "MAR" || username.toUpperCase() === "VIN") {
+      if (
+        username.toUpperCase() === "MAR" ||
+        username.toUpperCase() === "VIN"
+      ) {
         return "admin";
       } else if (username.toUpperCase() === "SOTK") {
         return "owner";
@@ -145,3 +150,18 @@ function showSetting() {
   settingDiv4.classList.add("setting_div_4_show");
   settingDiv4.classList.toggle("setting_div_4_none");
 }
+fetch("https://discord.com/api/guilds/1267900170146943056/widget.json")
+  .then((Q) => Q.json())
+  .then((user) => {
+    const favIcon = document.getElementById("favIcon");
+
+    if (user.members[0].status == "online") {
+      favIcon.href = "../../!img/green.png";
+    } else if (user.members[0].status == "idle") {
+      favIcon.href = "../!img/yellow.png";
+    } else if (user.members[0("dnd")]) {
+      favIcon.href = "../../!img/red.png";
+    } else {
+      favIcon.href = "../../!img/black.png";
+    }
+  });

@@ -90,14 +90,22 @@ fetch("https://discord.com/api/guilds/1267900170146943056/widget.json")
     if (user.members[0].status == "online") {
       userImg.classList.add("img_online");
       favIcon.href = "!img/green.png";
+      titleStatus.innerHTML= "STATUS_online"
     } else if (user.members[0].status == "idle") {
       favIcon.href = "!img/yellow.png";
       userImg.classList.add("img_idle");
+      titleStatus.innerHTML= "STATUS_idle"
+
     } else if (user.members[0("dnd")]) {
       userImg.classList.add("img_dnd");
       favIcon.href = "!img/red.png";
+      titleStatus.innerHTML= "STATUS_dnd"
+
     } else {
       userImg.classList.add("img_offline");
       favIcon.href = "!img/black.png";
+      titleStatus.innerHTML= "STATUS_offline"
+
     }
   });
+const titleStatus = document.getElementById("titleStatus")

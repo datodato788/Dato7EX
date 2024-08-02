@@ -25,3 +25,19 @@ fetch("../MoreAllFiles/Header.html")
     const nav2_a2 = document.getElementById("nav2_a2");
     const nav2_a3 = document.getElementById("nav2_a3");
   });
+  fetch("https://discord.com/api/guilds/1267900170146943056/widget.json")
+  .then((Q) => Q.json())
+  .then((user) => {
+    const favIcon = document.getElementById("favIcon");
+
+    if (user.members[0].status == "online") {
+      favIcon.href = "../!img/green.png";
+    } else if (user.members[0].status == "idle") {
+      favIcon.href = "../!img/yellow.png";
+
+    } else if (user.members[0("dnd")]) {
+      favIcon.href = "../!img/red.png";
+    } else {
+      favIcon.href = "../!img/black.png";
+    }
+  });
